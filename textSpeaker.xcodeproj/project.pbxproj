@@ -12,9 +12,12 @@
 		205FEB401E6211110036CE80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 205FEB3E1E6211110036CE80 /* Main.storyboard */; };
 		205FEB421E6211110036CE80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 205FEB411E6211110036CE80 /* Assets.xcassets */; };
 		205FEB451E6211110036CE80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 205FEB431E6211110036CE80 /* LaunchScreen.storyboard */; };
+		20C9B2EC1E623FCA00503C61 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C9B2EB1E623FCA00503C61 /* Constants.swift */; };
+		6184A12AC29E4C2993C88A95 /* Pods_textSpeaker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1947E8BD55B9234447B1BBE5 /* Pods_textSpeaker.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1947E8BD55B9234447B1BBE5 /* Pods_textSpeaker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_textSpeaker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		205FEB371E6211110036CE80 /* textSpeaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = textSpeaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		205FEB3A1E6211110036CE80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		205FEB3C1E6211110036CE80 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,9 @@
 		205FEB411E6211110036CE80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		205FEB441E6211110036CE80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		205FEB461E6211110036CE80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20C9B2EB1E623FCA00503C61 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		57B4DEE153651BC7BD6E7051 /* Pods-textSpeaker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-textSpeaker.release.xcconfig"; path = "Pods/Target Support Files/Pods-textSpeaker/Pods-textSpeaker.release.xcconfig"; sourceTree = "<group>"; };
+		8A96AC631F36814DE0B2D6DB /* Pods-textSpeaker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-textSpeaker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-textSpeaker/Pods-textSpeaker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6184A12AC29E4C2993C88A95 /* Pods_textSpeaker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				205FEB391E6211110036CE80 /* textSpeaker */,
 				205FEB381E6211110036CE80 /* Products */,
+				83CFDDB70B63B8E66979DDC4 /* Pods */,
+				9A6B5194C8782413E0476BA7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +65,30 @@
 			children = (
 				205FEB3A1E6211110036CE80 /* AppDelegate.swift */,
 				205FEB3C1E6211110036CE80 /* ViewController.swift */,
+				20C9B2EB1E623FCA00503C61 /* Constants.swift */,
 				205FEB3E1E6211110036CE80 /* Main.storyboard */,
 				205FEB411E6211110036CE80 /* Assets.xcassets */,
 				205FEB431E6211110036CE80 /* LaunchScreen.storyboard */,
 				205FEB461E6211110036CE80 /* Info.plist */,
 			);
 			path = textSpeaker;
+			sourceTree = "<group>";
+		};
+		83CFDDB70B63B8E66979DDC4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A96AC631F36814DE0B2D6DB /* Pods-textSpeaker.debug.xcconfig */,
+				57B4DEE153651BC7BD6E7051 /* Pods-textSpeaker.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9A6B5194C8782413E0476BA7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1947E8BD55B9234447B1BBE5 /* Pods_textSpeaker.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 205FEB491E6211110036CE80 /* Build configuration list for PBXNativeTarget "textSpeaker" */;
 			buildPhases = (
+				C192BB96300DACDC5B763960 /* [CP] Check Pods Manifest.lock */,
 				205FEB331E6211110036CE80 /* Sources */,
 				205FEB341E6211110036CE80 /* Frameworks */,
 				205FEB351E6211110036CE80 /* Resources */,
+				C4A73A81AC459515CED6753F /* [CP] Embed Pods Frameworks */,
+				545D26D708D449DB78BDD74D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +126,7 @@
 				TargetAttributes = {
 					205FEB361E6211110036CE80 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = HW8P56PA6U;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +162,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		545D26D708D449DB78BDD74D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-textSpeaker/Pods-textSpeaker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C192BB96300DACDC5B763960 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C4A73A81AC459515CED6753F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-textSpeaker/Pods-textSpeaker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		205FEB331E6211110036CE80 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -138,6 +217,7 @@
 			files = (
 				205FEB3D1E6211110036CE80 /* ViewController.swift in Sources */,
 				205FEB3B1E6211110036CE80 /* AppDelegate.swift in Sources */,
+				20C9B2EC1E623FCA00503C61 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +336,10 @@
 		};
 		205FEB4A1E6211110036CE80 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A96AC631F36814DE0B2D6DB /* Pods-textSpeaker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HW8P56PA6U;
 				INFOPLIST_FILE = textSpeaker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = KaWing.textSpeaker;
@@ -268,8 +350,10 @@
 		};
 		205FEB4B1E6211110036CE80 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57B4DEE153651BC7BD6E7051 /* Pods-textSpeaker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HW8P56PA6U;
 				INFOPLIST_FILE = textSpeaker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = KaWing.textSpeaker;
@@ -297,6 +381,7 @@
 				205FEB4B1E6211110036CE80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
