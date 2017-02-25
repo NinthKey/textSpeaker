@@ -1,0 +1,6 @@
+framework module Pods_textSpeaker {
+  umbrella header "Pods-textSpeaker-umbrella.h"
+
+  export *
+  module * { export * }
+}
