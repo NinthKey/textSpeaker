@@ -17,6 +17,8 @@
 		D85816851E622A440050D2BB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85816841E622A440050D2BB /* CoreGraphics.framework */; };
 		D85816861E622D4F0050D2BB /* TET_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D881D9F31E62215400C1CA1F /* TET_ios.framework */; };
 		D85816881E622D850050D2BB /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D85816871E622D850050D2BB /* libstdc++.tbd */; };
+		D858168B1E62332D0050D2BB /* sample_textSpeak.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D858168A1E62332D0050D2BB /* sample_textSpeak.pdf */; };
+		D858168D1E623F4E0050D2BB /* extractFile.xib in Resources */ = {isa = PBXBuildFile; fileRef = D858168C1E623F4E0050D2BB /* extractFile.xib */; };
 		D881D9F01E621C3D00C1CA1F /* extractFile.m in Sources */ = {isa = PBXBuildFile; fileRef = D881D9EF1E621C3D00C1CA1F /* extractFile.m */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +34,8 @@
 		D85816821E6229BE0050D2BB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D85816841E622A440050D2BB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		D85816871E622D850050D2BB /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		D858168A1E62332D0050D2BB /* sample_textSpeak.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = sample_textSpeak.pdf; path = ../sample_textSpeak.pdf; sourceTree = "<group>"; };
+		D858168C1E623F4E0050D2BB /* extractFile.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = extractFile.xib; sourceTree = "<group>"; };
 		D881D9EE1E621C3D00C1CA1F /* textSpeaker-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "textSpeaker-Bridging-Header.h"; sourceTree = "<group>"; };
 		D881D9EF1E621C3D00C1CA1F /* extractFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = extractFile.m; sourceTree = "<group>"; };
 		D881D9F11E621E9000C1CA1F /* extractFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = extractFile.h; sourceTree = "<group>"; };
@@ -60,6 +64,7 @@
 				205FEB391E6211110036CE80 /* textSpeaker */,
 				205FEB381E6211110036CE80 /* Products */,
 				D858167F1E6229B70050D2BB /* Frameworks */,
+				D85816891E6232360050D2BB /* Resources */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,6 +87,7 @@
 				205FEB461E6211110036CE80 /* Info.plist */,
 				D881D9EF1E621C3D00C1CA1F /* extractFile.m */,
 				D881D9F11E621E9000C1CA1F /* extractFile.h */,
+				D858168C1E623F4E0050D2BB /* extractFile.xib */,
 				D881D9EE1E621C3D00C1CA1F /* textSpeaker-Bridging-Header.h */,
 			);
 			path = textSpeaker;
@@ -97,6 +103,14 @@
 				D85816801E6229B70050D2BB /* UIKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D85816891E6232360050D2BB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D858168A1E62332D0050D2BB /* sample_textSpeak.pdf */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,7 +174,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				205FEB451E6211110036CE80 /* LaunchScreen.storyboard in Resources */,
+				D858168D1E623F4E0050D2BB /* extractFile.xib in Resources */,
 				205FEB421E6211110036CE80 /* Assets.xcassets in Resources */,
+				D858168B1E62332D0050D2BB /* sample_textSpeak.pdf in Resources */,
 				205FEB401E6211110036CE80 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
