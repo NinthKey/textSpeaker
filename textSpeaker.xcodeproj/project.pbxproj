@@ -12,17 +12,12 @@
 		205FEB401E6211110036CE80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 205FEB3E1E6211110036CE80 /* Main.storyboard */; };
 		205FEB421E6211110036CE80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 205FEB411E6211110036CE80 /* Assets.xcassets */; };
 		205FEB451E6211110036CE80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 205FEB431E6211110036CE80 /* LaunchScreen.storyboard */; };
-		D85816811E6229B70050D2BB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85816801E6229B70050D2BB /* UIKit.framework */; };
-		D85816831E6229BE0050D2BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85816821E6229BE0050D2BB /* Foundation.framework */; };
-		D85816851E622A440050D2BB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85816841E622A440050D2BB /* CoreGraphics.framework */; };
-		D85816861E622D4F0050D2BB /* TET_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D881D9F31E62215400C1CA1F /* TET_ios.framework */; };
-		D85816881E622D850050D2BB /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D85816871E622D850050D2BB /* libstdc++.tbd */; };
-		D858168B1E62332D0050D2BB /* sample_textSpeak.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D858168A1E62332D0050D2BB /* sample_textSpeak.pdf */; };
-		D858168D1E623F4E0050D2BB /* extractFile.xib in Resources */ = {isa = PBXBuildFile; fileRef = D858168C1E623F4E0050D2BB /* extractFile.xib */; };
-		D881D9F01E621C3D00C1CA1F /* extractFile.m in Sources */ = {isa = PBXBuildFile; fileRef = D881D9EF1E621C3D00C1CA1F /* extractFile.m */; };
+		20C9B2EC1E623FCA00503C61 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C9B2EB1E623FCA00503C61 /* Constants.swift */; };
+		6184A12AC29E4C2993C88A95 /* Pods_textSpeaker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1947E8BD55B9234447B1BBE5 /* Pods_textSpeaker.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1947E8BD55B9234447B1BBE5 /* Pods_textSpeaker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_textSpeaker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		205FEB371E6211110036CE80 /* textSpeaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = textSpeaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		205FEB3A1E6211110036CE80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		205FEB3C1E6211110036CE80 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -30,16 +25,9 @@
 		205FEB411E6211110036CE80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		205FEB441E6211110036CE80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		205FEB461E6211110036CE80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D85816801E6229B70050D2BB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		D85816821E6229BE0050D2BB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		D85816841E622A440050D2BB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		D85816871E622D850050D2BB /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
-		D858168A1E62332D0050D2BB /* sample_textSpeak.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = sample_textSpeak.pdf; path = ../sample_textSpeak.pdf; sourceTree = "<group>"; };
-		D858168C1E623F4E0050D2BB /* extractFile.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = extractFile.xib; sourceTree = "<group>"; };
-		D881D9EE1E621C3D00C1CA1F /* textSpeaker-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "textSpeaker-Bridging-Header.h"; sourceTree = "<group>"; };
-		D881D9EF1E621C3D00C1CA1F /* extractFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = extractFile.m; sourceTree = "<group>"; };
-		D881D9F11E621E9000C1CA1F /* extractFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = extractFile.h; sourceTree = "<group>"; };
-		D881D9F31E62215400C1CA1F /* TET_ios.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TET_ios.framework; path = TET_ios/TET_ios.framework; sourceTree = "<group>"; };
+		20C9B2EB1E623FCA00503C61 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		57B4DEE153651BC7BD6E7051 /* Pods-textSpeaker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-textSpeaker.release.xcconfig"; path = "Pods/Target Support Files/Pods-textSpeaker/Pods-textSpeaker.release.xcconfig"; sourceTree = "<group>"; };
+		8A96AC631F36814DE0B2D6DB /* Pods-textSpeaker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-textSpeaker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-textSpeaker/Pods-textSpeaker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,11 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D85816881E622D850050D2BB /* libstdc++.tbd in Frameworks */,
-				D85816861E622D4F0050D2BB /* TET_ios.framework in Frameworks */,
-				D85816851E622A440050D2BB /* CoreGraphics.framework in Frameworks */,
-				D85816831E6229BE0050D2BB /* Foundation.framework in Frameworks */,
-				D85816811E6229B70050D2BB /* UIKit.framework in Frameworks */,
+				6184A12AC29E4C2993C88A95 /* Pods_textSpeaker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,8 +47,8 @@
 			children = (
 				205FEB391E6211110036CE80 /* textSpeaker */,
 				205FEB381E6211110036CE80 /* Products */,
-				D858167F1E6229B70050D2BB /* Frameworks */,
-				D85816891E6232360050D2BB /* Resources */,
+				83CFDDB70B63B8E66979DDC4 /* Pods */,
+				9A6B5194C8782413E0476BA7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +65,7 @@
 			children = (
 				205FEB3A1E6211110036CE80 /* AppDelegate.swift */,
 				205FEB3C1E6211110036CE80 /* ViewController.swift */,
+				20C9B2EB1E623FCA00503C61 /* Constants.swift */,
 				205FEB3E1E6211110036CE80 /* Main.storyboard */,
 				205FEB411E6211110036CE80 /* Assets.xcassets */,
 				205FEB431E6211110036CE80 /* LaunchScreen.storyboard */,
@@ -93,24 +78,21 @@
 			path = textSpeaker;
 			sourceTree = "<group>";
 		};
-		D858167F1E6229B70050D2BB /* Frameworks */ = {
+		83CFDDB70B63B8E66979DDC4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D85816871E622D850050D2BB /* libstdc++.tbd */,
-				D881D9F31E62215400C1CA1F /* TET_ios.framework */,
-				D85816841E622A440050D2BB /* CoreGraphics.framework */,
-				D85816821E6229BE0050D2BB /* Foundation.framework */,
-				D85816801E6229B70050D2BB /* UIKit.framework */,
+				8A96AC631F36814DE0B2D6DB /* Pods-textSpeaker.debug.xcconfig */,
+				57B4DEE153651BC7BD6E7051 /* Pods-textSpeaker.release.xcconfig */,
 			);
-			name = Frameworks;
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		D85816891E6232360050D2BB /* Resources */ = {
+		9A6B5194C8782413E0476BA7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D858168A1E62332D0050D2BB /* sample_textSpeak.pdf */,
+				1947E8BD55B9234447B1BBE5 /* Pods_textSpeaker.framework */,
 			);
-			name = Resources;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,9 +102,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 205FEB491E6211110036CE80 /* Build configuration list for PBXNativeTarget "textSpeaker" */;
 			buildPhases = (
+				C192BB96300DACDC5B763960 /* [CP] Check Pods Manifest.lock */,
 				205FEB331E6211110036CE80 /* Sources */,
 				205FEB341E6211110036CE80 /* Frameworks */,
 				205FEB351E6211110036CE80 /* Resources */,
+				C4A73A81AC459515CED6753F /* [CP] Embed Pods Frameworks */,
+				545D26D708D449DB78BDD74D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -145,7 +130,7 @@
 				TargetAttributes = {
 					205FEB361E6211110036CE80 = {
 						CreatedOnToolsVersion = 8.2.1;
-						LastSwiftMigration = 0820;
+						DevelopmentTeam = HW8P56PA6U;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -183,6 +168,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		545D26D708D449DB78BDD74D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-textSpeaker/Pods-textSpeaker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C192BB96300DACDC5B763960 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C4A73A81AC459515CED6753F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-textSpeaker/Pods-textSpeaker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		205FEB331E6211110036CE80 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -191,6 +224,7 @@
 				D881D9F01E621C3D00C1CA1F /* extractFile.m in Sources */,
 				205FEB3D1E6211110036CE80 /* ViewController.swift in Sources */,
 				205FEB3B1E6211110036CE80 /* AppDelegate.swift in Sources */,
+				20C9B2EC1E623FCA00503C61 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,13 +343,10 @@
 		};
 		205FEB4A1E6211110036CE80 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A96AC631F36814DE0B2D6DB /* Pods-textSpeaker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/TET_ios",
-				);
+				DEVELOPMENT_TEAM = HW8P56PA6U;
 				INFOPLIST_FILE = textSpeaker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = KaWing.textSpeaker;
@@ -328,13 +359,10 @@
 		};
 		205FEB4B1E6211110036CE80 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57B4DEE153651BC7BD6E7051 /* Pods-textSpeaker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/TET_ios",
-				);
+				DEVELOPMENT_TEAM = HW8P56PA6U;
 				INFOPLIST_FILE = textSpeaker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = KaWing.textSpeaker;
