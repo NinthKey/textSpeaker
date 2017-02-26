@@ -92,7 +92,7 @@
             TETExtractorViewController *detailViewController = [[TETExtractorViewController alloc] initWithNibName:@"TETExtractorViewController" bundle:nil];
             
             detailViewController.fileName = _fileName;
-            
+            detailViewController.stringController = _stringController;
             [self.navigationController pushViewController:detailViewController animated:YES];
         }
             break;

@@ -131,7 +131,7 @@
             {
                 warningText  = [NSString stringWithFormat:@"%@\nError %ld in %@() on page %d: %@\n", warningText, (long)[tet get_errnum], [tet get_apiname], pageno, [tet get_errmsg]];
             }
-            
+            [_stringController appendString:pdfText];
             [tet close_page:page];
         }
         

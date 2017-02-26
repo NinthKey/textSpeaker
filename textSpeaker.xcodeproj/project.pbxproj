@@ -33,6 +33,7 @@
 		20C9B3531E628F0A00503C61 /* TETImageResourceTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20C9B3491E628F0A00503C61 /* TETImageResourceTableViewController.xib */; };
 		20C9B3561E62A46700503C61 /* Hate Crime Is Feared as 2 Indian Engineers Are Shot in Kansas.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 20C9B3551E62A46700503C61 /* Hate Crime Is Feared as 2 Indian Engineers Are Shot in Kansas.pdf */; };
 		20C9B3581E62A47500503C61 /* Trump Immigration Policies Pose Conflict for Police in ‘Sanctuary Cities’.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 20C9B3571E62A47500503C61 /* Trump Immigration Policies Pose Conflict for Police in ‘Sanctuary Cities’.pdf */; };
+		20C9B35B1E62B31C00503C61 /* NSObject+StringController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C9B35A1E62B31C00503C61 /* NSObject+StringController.m */; };
 		6184A12AC29E4C2993C88A95 /* Pods_textSpeaker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1947E8BD55B9234447B1BBE5 /* Pods_textSpeaker.framework */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +75,8 @@
 		20C9B3541E62904100503C61 /* textSpeaker-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "textSpeaker-Bridging-Header.h"; sourceTree = "<group>"; };
 		20C9B3551E62A46700503C61 /* Hate Crime Is Feared as 2 Indian Engineers Are Shot in Kansas.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Hate Crime Is Feared as 2 Indian Engineers Are Shot in Kansas.pdf"; path = "textSpeaker/pdfs/Hate Crime Is Feared as 2 Indian Engineers Are Shot in Kansas.pdf"; sourceTree = "<group>"; };
 		20C9B3571E62A47500503C61 /* Trump Immigration Policies Pose Conflict for Police in ‘Sanctuary Cities’.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Trump Immigration Policies Pose Conflict for Police in ‘Sanctuary Cities’.pdf"; path = "textSpeaker/pdfs/Trump Immigration Policies Pose Conflict for Police in ‘Sanctuary Cities’.pdf"; sourceTree = "<group>"; };
+		20C9B3591E62B31C00503C61 /* NSObject+StringController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+StringController.h"; sourceTree = "<group>"; };
+		20C9B35A1E62B31C00503C61 /* NSObject+StringController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+StringController.m"; sourceTree = "<group>"; };
 		57B4DEE153651BC7BD6E7051 /* Pods-textSpeaker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-textSpeaker.release.xcconfig"; path = "Pods/Target Support Files/Pods-textSpeaker/Pods-textSpeaker.release.xcconfig"; sourceTree = "<group>"; };
 		8A96AC631F36814DE0B2D6DB /* Pods-textSpeaker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-textSpeaker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-textSpeaker/Pods-textSpeaker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -140,6 +143,8 @@
 				20C9B2F01E62488900503C61 /* textSpeaker-Bridging-Header.h */,
 				205FEB3A1E6211110036CE80 /* AppDelegate.swift */,
 				205FEB3C1E6211110036CE80 /* ViewController.swift */,
+				20C9B3591E62B31C00503C61 /* NSObject+StringController.h */,
+				20C9B35A1E62B31C00503C61 /* NSObject+StringController.m */,
 				20C9B2EB1E623FCA00503C61 /* Constants.swift */,
 				205FEB3E1E6211110036CE80 /* Main.storyboard */,
 				205FEB411E6211110036CE80 /* Assets.xcassets */,
@@ -311,6 +316,7 @@
 				20C9B3521E628F0A00503C61 /* TETImageResourceTableViewController.m in Sources */,
 				20C9B3501E628F0A00503C61 /* TETGlyphInfoViewController.m in Sources */,
 				205FEB3B1E6211110036CE80 /* AppDelegate.swift in Sources */,
+				20C9B35B1E62B31C00503C61 /* NSObject+StringController.m in Sources */,
 				20C9B2EC1E623FCA00503C61 /* Constants.swift in Sources */,
 				20C9B34A1E628F0A00503C61 /* TETDetailViewController.m in Sources */,
 				20C9B2F11E62488900503C61 /* extractFile.m in Sources */,

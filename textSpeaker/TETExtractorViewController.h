@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NSObject+StringController.h"
+
 
 
 @interface TETExtractorViewController : UIViewController {
@@ -15,6 +17,7 @@
 }
 
 @property (nonatomic, strong) NSString *fileName;
+@property (nonatomic, strong) StringController *stringController;
 
 - (void) extractText;
 - (void) displayError: (NSString *) message ;

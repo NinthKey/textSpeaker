@@ -10,4 +10,6 @@
 #define textSpeaker_Bridging_Header_h
 
 #import "TETDetailViewController.h"
+#import "NSObject+StringController.h"
+
 #endif /* textSpeaker_Bridging_Header_h */

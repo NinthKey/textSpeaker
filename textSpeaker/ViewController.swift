@@ -14,6 +14,8 @@ import AWSPolly
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     var audioPlayer = AVPlayer()
+    var stringController = StringController()
+    
     var newPath = ""
     @IBOutlet weak var tableView: UITableView!
     
@@ -57,6 +59,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         //detailViewController.fileName = names[indexPath.row]
         detailViewController.fileName = newPath + "/" + names[indexPath.row]
         
+        detailViewController.stringController = stringController
+        
         self.navigationController!.pushViewController(detailViewController, animated: true)
         
     }
@@ -66,10 +70,15 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         let input = AWSPollySynthesizeSpeechURLBuilderRequest()
         
-        input.text = "Hello, my name is Joe. I know I'm stupid. Please forgive me. "
-        
+        input.text = "little bitch mother fucker stupid ass"
+//        print("////")
+//        print(stringController.size )
+//        input.text = stringController.removeString()
+//        print("***")
+//        print(input.text)
+//        print("/////")
         input.outputFormat = AWSPollyOutputFormat.mp3
-        
+//
         input.voiceId = AWSPollyVoiceId.salli
         
         // Create an task to synthesize speech using the given synthesis input

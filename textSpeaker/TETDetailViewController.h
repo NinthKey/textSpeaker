@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NSObject+StringController.h"
 
 @interface TETDetailViewController : UIViewController <UIActionSheetDelegate> {
     NSString *_fileName;
@@ -15,6 +16,7 @@
 }
 
 @property (nonatomic, strong) NSString *fileName;
+@property (nonatomic, strong) StringController *stringController;
 
 - (IBAction)actionButtonPressed:(id)sender ;
 
