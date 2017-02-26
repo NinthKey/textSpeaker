@@ -11,16 +11,56 @@ import AVFoundation
 import AWSPolly
 
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     var audioPlayer = AVPlayer()
+    var newPath = ""
+    @IBOutlet weak var tableView: UITableView!
     
+    var names = ["ka", "wing","ka", "wing","ka", "wing","ka", "wing","ka", "wing","ka", "wing","ka", "wing","ka", "wing","ka", "wing"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        let fm = FileManager.default
+        let path = Bundle.main.resourcePath!
+        newPath = path.appending("/pdfs")
+        print(newPath)
+        do {
+            names = try fm.contentsOfDirectory(atPath: newPath)
+            
+        } catch {
+            // failed to read directory – bad permissions, perhaps?
+        }
+        
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
     }
     
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return names.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell:UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "prototype") as UITableViewCell!
+        cell.textLabel?.text = names[indexPath.row]
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        print(indexPath)
+        let detailViewController = TETDetailViewController()
+        //detailViewController.fileName = names[indexPath.row]
+        detailViewController.fileName = newPath + "/" + names[indexPath.row]
+        
+        self.navigationController!.pushViewController(detailViewController, animated: true)
+        
+    }
+
     
     @IBAction func playButtonAction(_ sender: Any) {
         
