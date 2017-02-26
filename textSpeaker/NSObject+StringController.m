@@ -32,7 +32,7 @@
     NSString* result ;
     if(self.start<self.end){
         result = [_stringList objectAtIndex:_start];
-        NSLog(result);
+//        NSLog(result);
         _start += 1;
         self.size = _end - _start; 
     }
