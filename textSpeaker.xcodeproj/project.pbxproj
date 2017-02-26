@@ -35,6 +35,7 @@
 		20C9B3581E62A47500503C61 /* Trump Immigration Policies Pose Conflict for Police in ‘Sanctuary Cities’.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 20C9B3571E62A47500503C61 /* Trump Immigration Policies Pose Conflict for Police in ‘Sanctuary Cities’.pdf */; };
 		20C9B35B1E62B31C00503C61 /* NSObject+StringController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C9B35A1E62B31C00503C61 /* NSObject+StringController.m */; };
 		6184A12AC29E4C2993C88A95 /* Pods_textSpeaker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1947E8BD55B9234447B1BBE5 /* Pods_textSpeaker.framework */; };
+		D8DD2A8E1E62D982004F2495 /* CamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DD2A8D1E62D982004F2495 /* CamViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +80,7 @@
 		20C9B35A1E62B31C00503C61 /* NSObject+StringController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+StringController.m"; sourceTree = "<group>"; };
 		57B4DEE153651BC7BD6E7051 /* Pods-textSpeaker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-textSpeaker.release.xcconfig"; path = "Pods/Target Support Files/Pods-textSpeaker/Pods-textSpeaker.release.xcconfig"; sourceTree = "<group>"; };
 		8A96AC631F36814DE0B2D6DB /* Pods-textSpeaker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-textSpeaker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-textSpeaker/Pods-textSpeaker.debug.xcconfig"; sourceTree = "<group>"; };
+		D8DD2A8D1E62D982004F2495 /* CamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CamViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 				20C9B3021E62776C00503C61 /* pdfs */,
 				205FEB431E6211110036CE80 /* LaunchScreen.storyboard */,
 				205FEB461E6211110036CE80 /* Info.plist */,
+				D8DD2A8D1E62D982004F2495 /* CamViewController.swift */,
 			);
 			path = textSpeaker;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 				20C9B2EC1E623FCA00503C61 /* Constants.swift in Sources */,
 				20C9B34A1E628F0A00503C61 /* TETDetailViewController.m in Sources */,
 				20C9B2F11E62488900503C61 /* extractFile.m in Sources */,
+				D8DD2A8E1E62D982004F2495 /* CamViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

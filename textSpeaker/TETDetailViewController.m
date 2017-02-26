@@ -80,9 +80,15 @@
 }
 
 - (IBAction)actionButtonPressed:(id)sender {
-
+    TETExtractorViewController *detailViewController = [[TETExtractorViewController alloc] initWithNibName:@"TETExtractorViewController" bundle:nil];
+    
+    detailViewController.fileName = _fileName;
+    detailViewController.stringController = _stringController;
+    [self.navigationController pushViewController:detailViewController animated:YES];
+/*
     UIActionSheet *sheet = [[UIActionSheet alloc] initWithTitle:@"Run TET Test" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"Extract Text", @"Extract Images", @"Glyph Info", @"Dumper" , nil];
     [sheet showInView:self.view];
+ */
 }
 
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {

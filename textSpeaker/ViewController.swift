@@ -41,7 +41,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         self.tableView.dataSource = self
     }
     
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return names.count
     }
@@ -78,6 +77,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         print(input.text)
         print("/////")
         input.outputFormat = AWSPollyOutputFormat.mp3
+       // stringController.append("HI");
 //
         input.voiceId = AWSPollyVoiceId.salli
         
