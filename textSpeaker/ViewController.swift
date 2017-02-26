@@ -73,22 +73,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         let input = AWSPollySynthesizeSpeechURLBuilderRequest()
         let stringToPlay = stringController.removeString()
-        
-<<<<<<< HEAD
-//        input.text = "little bitch mother fucker stupid ass"
-//        print("////")
-//        print(stringController.size )
-        input.text = stringController.removeString()
-        print("***")
-        print(input.text)
-        print("/////")
-        input.outputFormat = AWSPollyOutputFormat.mp3
-       // stringController.append("HI");
-//
-        input.voiceId = AWSPollyVoiceId.salli
-=======
+
         let stringArray = stringToPlay?.components(separatedBy: " " )
->>>>>>> master
         
         var finalStringArray = [String]()
         

@@ -28,6 +28,12 @@
 	<string>to take photo</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>to get photo</string>
+	<key>CFBundleGetInfoString</key>
+	<string></string>
+	<key>CFBundleDisplayName</key>
+	<string></string>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
