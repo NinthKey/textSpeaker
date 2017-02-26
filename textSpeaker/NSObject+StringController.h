@@ -13,7 +13,9 @@
 @property NSMutableArray *stringList;
 @property int start;
 @property int end;
-@property int size; 
+@property int size;
+@property NSString* result;
+
 -(void)appendString:(NSString*) content;
 -(NSString*)removeString;
 

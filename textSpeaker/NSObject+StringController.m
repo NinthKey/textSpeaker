@@ -17,6 +17,7 @@
         self.stringList = [[NSMutableArray alloc] initWithCapacity:200];
         self.start = 0;
         self.end = 0 ;
+        self.result = @"";
     }
     
     return self;
@@ -28,15 +29,15 @@
 }
 
 -(NSString*)removeString{
-    
-    NSString* result ;
+    ;
     if(self.start<self.end){
-        result = [_stringList objectAtIndex:_start];
+        _result = [_stringList objectAtIndex:_start];
 //        NSLog(result);
         _start += 1;
         self.size = _end - _start; 
     }
-    return result;
+    
+    return _result;
 }
 
 
