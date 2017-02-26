@@ -167,7 +167,6 @@
     }
     
     _textView.text=pdfText;
-    fprintf(stdin,"%s",pdfText);
 }
 
 
