@@ -24,12 +24,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "textSpeaker/ViewController.swift"
-            timestampString = "509799004.148382"
+            timestampString = "509810737.183724"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "106"
-            endingLineNumber = "106"
-            landmarkName = "prepare(for:sender:)"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
+            landmarkName = "playButtonAction(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -11,12 +11,22 @@ import AVFoundation
 import AWSPolly
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-
+    
+    
+    var global_check = true;
+    
     var audioPlayer = AVPlayer()
     var stringController = StringController()
     var queue = Queue<URL>()
     var audioQueue = AVQueuePlayer()
-    
+//    
+//    @IBAction func PauseAction(_ sender: UIButton) {
+//        audioQueue.pause()
+//        audioQueue.removeAllItems()
+//    
+//        
+//        
+//    }
     
     var newPath = ""
     @IBOutlet weak var tableView: UITableView!
@@ -74,7 +84,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let input = AWSPollySynthesizeSpeechURLBuilderRequest()
         let stringToPlay = stringController.removeString()
         
-<<<<<<< HEAD
+
 //        input.text = "little bitch mother fucker stupid ass"
 //        print("////")
 //        print(stringController.size )
@@ -86,9 +96,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
        // stringController.append("HI");
 //
         input.voiceId = AWSPollyVoiceId.salli
-=======
+
         let stringArray = stringToPlay?.components(separatedBy: " " )
->>>>>>> master
+
         
         var finalStringArray = [String]()
         
@@ -131,6 +141,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         for str in finalStringArray{
             
             input.text = str
+            
+            if(global_check == false){
+                break;
+            }
+            
             
             input.outputFormat = AWSPollyOutputFormat.mp3
             input.voiceId = AWSPollyVoiceId.salli
