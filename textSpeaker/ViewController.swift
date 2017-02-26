@@ -15,11 +15,17 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     var audioPlayer = AVPlayer()
     var stringController = StringController()
+    var queue = Queue<URL>()
+    var audioQueue = AVQueuePlayer()
+    
     
     var newPath = ""
     @IBOutlet weak var tableView: UITableView!
     
+    var busy = false
+    
     var names = ["ka", "wing","ka", "wing","ka", "wing","ka", "wing","ka", "wing","ka", "wing","ka", "wing","ka", "wing","ka", "wing"]
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +42,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         } catch {
             // failed to read directory – bad permissions, perhaps?
         }
+
         
         self.tableView.delegate = self
         self.tableView.dataSource = self
@@ -54,9 +61,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        print(indexPath)
         let detailViewController = TETDetailViewController()
-        //detailViewController.fileName = names[indexPath.row]
         detailViewController.fileName = newPath + "/" + names[indexPath.row]
         
         detailViewController.stringController = stringController
@@ -69,36 +74,86 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBAction func playButtonAction(_ sender: Any) {
         
         let input = AWSPollySynthesizeSpeechURLBuilderRequest()
+        let stringToPlay = stringController.removeString()
         
-//        input.text = "little bitch mother fucker stupid ass"
-//        print("////")
-//        print(stringController.size )
-        input.text = stringController.removeString()
-        print("***")
-        print(input.text)
-        print("/////")
-        input.outputFormat = AWSPollyOutputFormat.mp3
-//
-        input.voiceId = AWSPollyVoiceId.salli
+        let stringArray = stringToPlay?.components(separatedBy: " " )
         
-        // Create an task to synthesize speech using the given synthesis input
-        let builder = AWSPollySynthesizeSpeechURLBuilder.default().getPreSignedURL(input)
+        var finalStringArray = [String]()
         
-        // Request the URL for synthesis result
-        builder.continueOnSuccessWith { (awsTask: AWSTask<NSURL>) -> Any? in
-            // The result of getPresignedURL task is NSURL.
-            // Again, we ignore the errors in the example.
-            let url = awsTask.result!
+        var count = 0
+        
+        for str in stringArray!{
+            if(count%10)==0{
+                finalStringArray.append("")
+            }
+            finalStringArray[count/10].append(str)
             
-            // Try playing the data using the system AVAudioPlayer
-            self.audioPlayer.replaceCurrentItem(with: AVPlayerItem(url: url as URL))
-            self.audioPlayer.play()
-            
-            return nil
+            finalStringArray[count/10].append(" ")
+            count+=1
         }
+        
+        
+//        input.text = stringController.removeString()
+        
+//        input.outputFormat = AWSPollyOutputFormat.mp3
+//        input.voiceId = AWSPollyVoiceId.salli
+//        
+//        // Create an task to synthesize speech using the given synthesis input
+//        let builder = AWSPollySynthesizeSpeechURLBuilder.default().getPreSignedURL(input)
+//        
+//        // Request the URL for synthesis result
+//        builder.continueOnSuccessWith { (awsTask: AWSTask<NSURL>) -> Any? in
+//            // The result of getPresignedURL task is NSURL.
+//            // Again, we ignore the errors in the example.
+//            let url = awsTask.result!
+//            
+//            self.queue.enqueue(url as URL)
+//            
+////            // Try playing the data using the system AVAudioPlayer
+////            self.audioPlayer.replaceCurrentItem(with: AVPlayerItem(url: url as URL))
+////            self.audioPlayer.play()
+////            
+//            return nil
+//        }
+        
+        for str in finalStringArray{
+            
+            input.text = str
+            
+            input.outputFormat = AWSPollyOutputFormat.mp3
+            input.voiceId = AWSPollyVoiceId.salli
+            
+            // Create an task to synthesize speech using the given synthesis input
+            let builder = AWSPollySynthesizeSpeechURLBuilder.default().getPreSignedURL(input)
+            
+            // Request the URL for synthesis result
+            builder.continueOnSuccessWith { (awsTask: AWSTask<NSURL>) -> Any? in
+                // The result of getPresignedURL task is NSURL.
+                // Again, we ignore the errors in the example.
+                let url = awsTask.result!
+                
+                self.queue.enqueue(url as URL)
+                
+                let newasset = AVURLAsset(url: url as URL)
+                let avPlayerItem = AVPlayerItem(asset: newasset)
+                
+                self.audioQueue.insert(avPlayerItem, after: self.audioQueue.items().last)
+
+                if(self.busy == false){
+                    self.audioQueue.play()
+                    self.busy = true
+                }
+                
+                if(self.audioQueue.items().count == 0){
+                    self.busy = false
+                }
+                
+                return nil
+            }
+        }
+    
     }
-    
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
