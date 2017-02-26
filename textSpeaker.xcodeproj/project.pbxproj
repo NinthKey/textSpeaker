@@ -158,11 +158,11 @@
 				20C9B3021E62776C00503C61 /* pdfs */,
 				205FEB431E6211110036CE80 /* LaunchScreen.storyboard */,
 				205FEB461E6211110036CE80 /* Info.plist */,
-<<<<<<< HEAD
+
 				D8DD2A8D1E62D982004F2495 /* CamViewController.swift */,
-=======
+
 				208520BE1E62D3E30084E77A /* Queue.swift */,
->>>>>>> master
+
 			);
 			path = textSpeaker;
 			sourceTree = "<group>";
