@@ -10,7 +10,6 @@ import UIKit
 import AVFoundation
 import AWSPolly
 
-
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     var audioPlayer = AVPlayer()
@@ -103,7 +102,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let desinationController: CamViewController = segue.destination as! CamViewController
     
+        desinationController.stringController = stringController
+    }
     
 }
 

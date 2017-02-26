@@ -36,6 +36,7 @@
 		20C9B35B1E62B31C00503C61 /* NSObject+StringController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C9B35A1E62B31C00503C61 /* NSObject+StringController.m */; };
 		6184A12AC29E4C2993C88A95 /* Pods_textSpeaker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1947E8BD55B9234447B1BBE5 /* Pods_textSpeaker.framework */; };
 		D8DD2A8E1E62D982004F2495 /* CamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DD2A8D1E62D982004F2495 /* CamViewController.swift */; };
+		D8DD2A921E62E3F4004F2495 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = D8DD2A911E62E3F4004F2495 /* tessdata */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +82,7 @@
 		57B4DEE153651BC7BD6E7051 /* Pods-textSpeaker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-textSpeaker.release.xcconfig"; path = "Pods/Target Support Files/Pods-textSpeaker/Pods-textSpeaker.release.xcconfig"; sourceTree = "<group>"; };
 		8A96AC631F36814DE0B2D6DB /* Pods-textSpeaker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-textSpeaker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-textSpeaker/Pods-textSpeaker.debug.xcconfig"; sourceTree = "<group>"; };
 		D8DD2A8D1E62D982004F2495 /* CamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CamViewController.swift; sourceTree = "<group>"; };
+		D8DD2A911E62E3F4004F2495 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 				20C9B33C1E628F0900503C61 /* TETDetailViewController.m */,
 				20C9B33D1E628F0900503C61 /* TETDetailViewController.xib */,
 				20C9B33E1E628F0900503C61 /* TETDumperViewController.h */,
+				D8DD2A911E62E3F4004F2495 /* tessdata */,
 				20C9B33F1E628F0900503C61 /* TETDumperViewController.m */,
 				20C9B3401E628F0900503C61 /* TETDumperViewController.xib */,
 				20C9B3411E628F0A00503C61 /* TETExtractorViewController.h */,
@@ -245,6 +248,7 @@
 			files = (
 				20C9B3581E62A47500503C61 /* Trump Immigration Policies Pose Conflict for Police in ‘Sanctuary Cities’.pdf in Resources */,
 				20C9B3561E62A46700503C61 /* Hate Crime Is Feared as 2 Indian Engineers Are Shot in Kansas.pdf in Resources */,
+				D8DD2A921E62E3F4004F2495 /* tessdata in Resources */,
 				20C9B3511E628F0A00503C61 /* TETGlyphInfoViewController.xib in Resources */,
 				20C9B3531E628F0A00503C61 /* TETImageResourceTableViewController.xib in Resources */,
 				20C9B3031E62776C00503C61 /* pdfs in Resources */,

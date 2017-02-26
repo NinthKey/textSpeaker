@@ -7,16 +7,18 @@
 //
 
 import UIKit
+import TesseractOCR
 
-class CamViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
-    
+class CamViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate , G8TesseractDelegate{
+
+    var stringController:StringController!
     
     @IBOutlet weak var pickedImaged: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
 
@@ -56,9 +58,26 @@ class CamViewController: UIViewController, UIImagePickerControllerDelegate, UINa
         }
     }
     
+//    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingImage image: UIImage!, editingInfo: [NSObject : AnyObject]!){
+//        pickedImaged.image = image
+//        self.dismiss(animated: true, completion: nil);
+//    }
+    
+    
+    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingImage image: UIImage!, editingInfo: [NSObject : AnyObject]!){
-        pickedImaged.image = image
-        self.dismiss(animated: true, completion: nil);
+        if let tesseract = G8Tesseract(language: "eng") {
+            tesseract.delegate = self
+            tesseract.image = image?.g8_blackAndWhite()
+            tesseract.recognize()
+            
+            //textView.text = tesseract.recognizedText
+            stringController.append(tesseract.recognizedText)
+            
+            
+            self.dismiss(animated: true, completion: nil);
+            
+        }
     }
 
 }

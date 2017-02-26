@@ -2,14 +2,17 @@ PODS:
   - AWSCore (2.5.1)
   - AWSPolly (2.5.1):
     - AWSCore (= 2.5.1)
+  - TesseractOCRiOS (4.0.0)
 
 DEPENDENCIES:
   - AWSPolly (~> 2.5.0)
+  - TesseractOCRiOS (= 4.0.0)
 
 SPEC CHECKSUMS:
   AWSCore: 71ca929a42c68ca7d645fcfa1e41ea0ff792a275
   AWSPolly: 3a7bd938d44b3ebfaf079cf8afa524a2748bedcf
+  TesseractOCRiOS: 90638afbe43d082433f2e76b384c7901d23956df
 
-PODFILE CHECKSUM: c7d02a82fb11e4471d6828cd020fc047311dc091
+PODFILE CHECKSUM: 7a8db7240f095ccda1f3f9508acd0ceaebe25284
 
 COCOAPODS: 1.2.0
